@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,15 +9,40 @@
     <header
       class="h-20 border-b border-gray/25 shadow-xl shadow-gray/25 sticky top-0 z-[99] bg-white/80 backdrop-blur-xl flex items-center"
     >
+      <!-- NAVBAR -->
       <nav class="container flex justify-between items-center gap-5">
         <h2 class="text-xl font-semibold">
           Dreamers Platform<span class="text-cyan">.</span>
         </h2>
         <ul class="flex gap-5">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a
+              href="#"
+              class="text-cyan hover:text-orange transition duration-300 ease-in-out"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="text-cyan hover:text-orange transition duration-300 ease-in-out"
+              >Products</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="text-cyan hover:text-orange transition duration-300 ease-in-out"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-cyan hover:text-orange transition duration-300 ease-in-out"
+              >Contact</a
+            >
+          </li>
           <li>
             <button class="relative cart__btn">
               <span
@@ -48,6 +73,13 @@
       </nav>
     </header>
     <main>
+      <!-- INTRODUCTION SECTION -->
+      <h3
+        class="container flex mt-10 justify-center items-center gap-5 text-dark/20 text-xl font-semibold"
+      >
+        Welcome to the Dreamers Platform. This is a place where Both the
+        customers and the sellers dream come true.
+      </h3>
       <!-- PRODUCTS SECTION -->
       <section class="products__section container py-20">
         <!-- SECTION TITLE -->
@@ -112,8 +144,92 @@
           </svg>
         </button>
       </div>
+
+      <!-- APPOINTMENT -->
+      <section id="appointment" class="py-20 bg-stone-100">
+        <!-- APPOINTMENT WRAPPER -->
+        <span class="container flex items-center justify-center mb-10 uppercase text-gray font-semibold tracking-widest"
+            >Delivery and Services info</span
+          >
+        <div
+          class="container grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center text-center px-56"
+        >
+          <!-- APPOINTMENT 1 -->
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-medium">Delivery hours</h5>
+            <ul>
+              <li>Mon-Fri: 9 AM - 6 PM</li>
+              <li>Saturday: 9 AM - 4 PM</li>
+              <li>Sunday: Closed</li>
+            </ul>
+          </div>
+
+          <!-- APPOINTMENT 2 -->
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-medium">Main office address</h5>
+            <div>
+              <p>
+                52/B Baker Street, London <br />
+                UK-1100
+              </p>
+              <button class="underline">Check Location</button>
+            </div>
+          </div>
+
+          <!-- APPOINTMENT 3 -->
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-medium">Support</h5>
+            <div>
+              <p>Telephone: 123456789</p>
+              <p>Email: support@dreamers_platform.com</p>
+              <button class="underline">Contact Form</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- NOTIFICATION SECTION -->
+      <section class="py-20 bg-stone-100">
+        <!-- SECTION TITLE -->
+        <div
+          class="container text-center flex flex-col items-center gap-1.5 mb-10"
+        >
+          <span class="uppercase text-gray font-semibold tracking-widest"
+            >New product notification</span
+          >
+          <h3 class="text-4xl font-medium max-w-lg">Want to get updates?</h3>
+        </div>
+
+        <form class="container max-w-2xl text-center flex flex-col gap-5">
+          <p>
+            We appreciate your trust greatly! Our clients choose us and our
+            products because they know we're the best.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row gap-5 items-center text-black/60"
+          >
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              class="w-full px-4 py-3 bg-transparent border-2 border-dashed border-cream rounded-xl outline-none"
+            />
+            <button
+              type="submit"
+              class="bg-cyan rounded-xl px-5 py-4 uppercase text-white font-semibold tracking-widest hover:bg-orange transition duration-300 ease-in-out w-full"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
-    <footer></footer>
+    <!-- FOOTER -->
+    <footer class="py-10">
+      <p class="container text-cream text-lg text-center sm:text-left">
+        &copy; 2024, <span class="underline">Dreamers Platform Ltd.</span>. All
+        rights reserved.
+      </p>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
